@@ -1,0 +1,19 @@
+logger:
+  path: logs/data-report.log
+  level: info
+  console: false
+csv:
+  path: /Users/bigfish/Documents/csv_file/
+  adPvClickCostDailyCsvFileName: ad_pv_click_cost_daily.csv
+  campaignDataDailySummariesCsvFileName: campaign_data_daily_summaries.csv
+  creativeDataDailySummariesCsvFileName: creative_data_daily_summaries.csv
+  userDataDailySummariesCsvFileName: user_data_daily_summaries.csv
+  allUsersDataDailySummariesCsvFileName: all_users_data_daily_summaries.csv
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  username: bpuser
+  password: "bpuser@123456"
+  database: bp
+  charset: utf8mb4
+  timeZone: UTC
