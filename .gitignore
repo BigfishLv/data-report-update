@@ -2,3 +2,5 @@
 logs/
 .DS_Store
 DataReportUpdate
+nohup.out
+DataReportUpdate.pid

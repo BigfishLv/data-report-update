@@ -1,5 +1,5 @@
 logger:
-  path: logs/date-report.log
+  path: logs/data-report.log
   level: debug
   console: false
 csv:

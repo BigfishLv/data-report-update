@@ -67,7 +67,8 @@ func loggerEncoder() zapcore.Encoder {
 	encoderConfig.EncodeLevel = func(level zapcore.Level, enc zapcore.PrimitiveArrayEncoder) {
 		enc.AppendString("[" + level.CapitalString() + "]")
 	}
-	encoderConfig.EncodeLevel = zapcore.CapitalColorLevelEncoder
+	// 这个是终端支持ANSI序列的话，输出的日志级别会显示颜色，但是直接看日志文件的话会显示乱码，影响日志可读性。
+	//encoderConfig.EncodeLevel = zapcore.CapitalColorLevelEncoder
 	encoderConfig.EncodeCaller = func(caller zapcore.EntryCaller, enc zapcore.PrimitiveArrayEncoder) {
 		enc.AppendString("[" + caller.TrimmedPath() + "]")
 	}

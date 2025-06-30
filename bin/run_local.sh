@@ -1,7 +1,7 @@
 #!/bin/sh
 
 APP_NAME=DataReportUpdate
-APP_PATH=/home/centos/data-report-update
+APP_PATH=/Users/bigfish/GolandProjects/data-report-update
 APP_PID=$APP_NAME\.pid
 ENV_NAME=local
 LOG_FILE=logs/data-report.log
