@@ -12,10 +12,10 @@ run:
 	./${APP_NAME} -env=local -conf=./config
 
 push-dev:
-	rsync -av -overwrite -e "ssh -i ~/bt.pem" ./${APP_NAME} centos@44.221.108.174:/home/centos/bt-coordinator/
+	rsync -av -overwrite -e "ssh -i ~/bt.pem" ./${APP_NAME} user@233.233.233.233:/home/centos/bt-coordinator/
 
 run-dev:
-	ssh -i "~/bt.pem" centos@44.221.108.174 ./bt-coordinator/run.sh restart
+	ssh -i "~/bt.pem" user@233.233.233.233 ./bt-coordinator/run.sh restart
 
 clean:
 	rm ./${APP_NAME}
